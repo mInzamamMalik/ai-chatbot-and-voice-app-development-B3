@@ -6,16 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
+
+    <style>
+        /* LIST OF ALL CSS RULES */
+        /* https://www.w3schools.com/cssref/ */
+
+        /* 
+        h1 {
+            color: red;
+            background-color: yellow;
+        } */
+
+        /* id selector */
+        /* #firstPara {
+            color: green;
+            background-color: yellow;
+        } */
+
+        /* class selector */
+        /* .imp {
+            border: 1px solid red;
+        } */
+
+        .profilePhoto {
+            border: 2px solid gray;
+            border-radius: 50%;
+            margin: 10px 10px 0px 10px;
+            width: 100px;
+            box-shadow: 15px 10px 10px -10px #888888;
+        }
+
+        body {
+            background-color: rgb(255, 221, 209);
+        }
+
+        .sectionOne {
+            background-color: #548CA8
+        }
+
+        .sectionOne>h1 {
+            color: white;
+            padding: 10px;
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+    </style>
+
 </head>
 
 <body>
 
-    <img width="200px" src="./profile.jpeg" alt="profile photo">
+    <div class="sectionOne">
+        <img class="profilePhoto" width="200px" src="./profile.jpeg" alt="profile photo">
+        <h1>M.Inzamam Malik</h1>
+
+    </div>
 
 
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element -->
-    <h1>Hello world</h1>
-    <h2>Hello world</h2>
+    <h2 class="imp">Hello world</h2>
     <h3>Hello world</h3>
     <h4>Hello world</h4>
     <h5>Hello world</h5>
@@ -25,7 +75,7 @@
     <br>
 
 
-    <b>Pakistan</b>
+    <b class="imp">Pakistan</b>
     <i>I am Italic text</i>
     <u>I am underline text</u>
 
@@ -35,10 +85,12 @@
 
     <hr>
 
+    <p id="firstPara">Apollo astronauts:</p>
+
     <p>Apollo astronauts:</p>
 
     <ul>
-        <li>Neil Armstrong</li>
+        <li class="imp">Neil Armstrong</li>
         <li>Alan Bean</li>
         <li>Peter Conrad</li>
         <li>Edgar Mitchell</li>
