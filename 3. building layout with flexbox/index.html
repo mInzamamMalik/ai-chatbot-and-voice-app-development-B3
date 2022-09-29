@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
+    <style>
+        .sectionOne {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* border: 2px solid purple; */
+            background-color: #404040;
+            color: white;
+            min-height: 300px;
+        }
+
+        .sectionOne>.left {
+            /* border: 2px solid green; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        .sectionOne>.left>img {
+            margin: 20px;
+            border-radius: 50%;
+        }
+
+        .sectionOne>.right {
+            /* border: 2px solid green; */
+
+        }
+
+        .sectionOne>.left>div {
+            font-family: 'Raleway', sans-serif;
+            /* border: 1px solid red; */
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .sectionOne>.left>div>.title {
+            font-size: 75px;
+            font-weight: 600;
+            line-height: 0.85;
+        }
+
+        .sectionOne>.left>div>.subtitle {
+            font-size: 26px;
+            letter-spacing: 3px;
+        }
+
+        .sectionOne>.right {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+
+        }
+
+        .sectionOne>.right>.logos {
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px 0px 30px 30px;
+        }
+
+        .sectionOne>.right>.logos>i {
+            margin: 5px;
+            border: 1px solid white;
+            padding: 8px;
+            border-radius: 50%;
+        }
+
+        .sectionOne>.right>.addr {
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .sectionOne>.right>.addr>p {
+            margin: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sectionOne">
+        <div class="left">
+            <img src="./profile.jpeg" width="200px" alt="profile photo">
+            <div>
+                <div class="title"> MALIK <br> INZAMAM </div>
+                <div class="subtitle"> CHATBOT DEVELOPER </div>
+            </div>
+
+        </div>
+        <div class="right">
+
+            <div class="logos">
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="addr">
+                <p>malik@sysborg.com</p>
+                <p>+92 302 2004480</p>
+                <p>19th street, new york city.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="sectionTwo">
+
+        <div class="left">
+            <h4>Work Experiance</h4>
+        </div>
+
+        <div class="right">
+            <h4>Profile</h4>
+        </div>
+
+    </div>
+</body>
+
+</html>
