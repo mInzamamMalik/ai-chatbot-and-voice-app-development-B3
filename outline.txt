@@ -1,0 +1,9 @@
+JavaScript programming fundamental (ES6)						4 weeks 
+=========================================================
+Variables 		(Boolean, Number, String, Array, Objects) 
+Math Operators 		(+  -  *  /  %  --  ++) 
+Conditional Statements 	(If else, ternary operator) 
+Conditional operators 	( ===   !==   <   >  <=   >=  ) 
+Logical operators 		(&&  ||  !) 
+Loop Statements 		(For loop, map) 
+ES6 functions 
