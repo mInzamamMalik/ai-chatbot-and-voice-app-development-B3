@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Taking input from user</h1>
+
+    <form onsubmit="doSum(); return false">
+        Num1: <input type="number" id="num1">
+        <br>
+        Num2: <input type="number" id="num2">
+        <br>
+        <button type="submit">Do Sum</button>
+    </form>
+
+    <h1 id="result">   </h1>
+
+    <script>
+
+        function doSum() {
+
+            console.log("I am doSum function running");
+
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+
+            num1 = Number(num1);
+            num2 = Number(num2);
+
+            let sumResult = num1 + num2;
+
+            console.log("sumResult is " + sumResult);
+
+            document.getElementById("result").innerHTML = sumResult;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
