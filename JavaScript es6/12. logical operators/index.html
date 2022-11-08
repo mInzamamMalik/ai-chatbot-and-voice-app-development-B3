@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Logical operators</h1>
+
+    <script>
+
+        // Logical AND operator - &&
+        // binary operator - need two operands
+        // Truth table:
+        // ============
+        // true && true -> true
+        // true && false -> false
+        // false && true -> false
+        // false && false -> false
+
+        // what about non boolean operands
+
+        // one side non boolean -> parse into boolean
+        // "car" && true -> true
+        // false && "car" -> false
+
+        // both side non boolean -> parse into boolean
+        // "car1" && "car2" -> "car2"
+        // undefined && "car" -> undefined 
+
+
+
+        // let temp = 26;
+
+        // if (temp > 18 && temp < 26) { // 19 - 25
+        //     console.log("weather looks pleasant ");
+        // }
+
+        // if(name && email && password){
+        //     console.log("all values present");
+        // }
+
+
+        ////////////////////////////////////////////////////////////////////////
+
+        // Logical OR operator - ||
+        // binary operator - need two operands
+        // Truth table:
+        // ============
+        // true || true -> true
+        // true || false -> true
+        // false || true -> true
+        // false || false -> false
+
+        // what about non boolean operands
+
+        let port = PORT || 3000; // will return first true value
+
+        if (!name || !email || !password) {
+            console.log("required parameters missing");
+        }
+
+
+
+        let temp = 25;
+
+        if (temp < 1 || temp > 40) {
+            console.log("weather is worst");
+        }
+
+
+        ////////////////////////////////////////////////////////////////
+
+
+        // Logical NOT operator - !
+        // unary operator - need only one operand
+        // Truth table:
+        // ============
+        // !true  -> false
+        // !false -> true
+
+        // what about non boolean operands
+
+        // !"car" -> false
+        // !"" -> true
+        // !5 -> false
+        // !0 -> true
+
+        let isLightOn = false;
+
+        function toggleLight(){
+            isLightOn = !isLightOn;
+        }
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
