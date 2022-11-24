@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>es6 array mapping</h1>
+
+    <p id="display"></p>
+
+    <script>
+
+        let coldDrinkExpenseInDollar = [23, 12, 45, 34, 67, 56, 45, 65, 43, 32];
+        // 224
+        let coldDrinkExpenseInPKR = []
+
+        // for (let i = 0; i < coldDrinkExpenseInDollar.length; i++) {
+        //     coldDrinkExpenseInPKR[i] = coldDrinkExpenseInDollar[i] * 224;
+        // }
+        // console.log(coldDrinkExpenseInPKR);
+
+
+        // coldDrinkExpenseInPKR = coldDrinkExpenseInDollar.map((eachValue, i) => {
+
+        //     console.log(`${i} -> ${eachValue}`);
+
+        //     return eachValue * 224;
+        // })
+
+        // console.log(coldDrinkExpenseInPKR);
+
+        ////////////////////////////////////////////////////////////////
+
+
+        // let marks = [23, 12, 45, 34, 67, 56, 45, 65, 43, 32];
+
+        // marks.map((eachValue, i) => {
+
+        //     console.log(eachValue)
+        //     document.querySelector("#display").innerHTML += eachValue
+        //     document.querySelector("#display").innerHTML += '<br />'
+        // });
+
+
+        ////////////////////////////////////////
+
+
+        let matrix = [
+            [2, 3, 1],
+            [4, 1, 2],
+            [5, 2, 3]
+        ];
+
+        matrix.map((eachValue, i) => {
+            eachValue.map((eachItem, j) => {
+
+                console.log(`${i} ${j} => ${eachItem}`);
+            })
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>
