@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>es6 Array Cloning</h1>
+    <h1>es6 Object Cloning</h1>
+
+    <script>
+        // let numbers = [1, 2, 3, 4];
+        // // let numbersCopy = numbers // copy by reference 
+        // // let numbersCopy = [].concat(numbers) // cloning - es5 way
+        // let numbersCopy = [...numbers] // cloning - es6 way
+
+        // console.log("numbers: ", numbers);
+        // console.log("numbersCopy: ", numbersCopy);
+
+        // numbers.push(900);
+
+        // console.log("numbers: ", numbers);
+        // console.log("numbersCopy: ", numbersCopy);
+
+
+        let student = {
+            name: "John",
+            roll: 23,
+            age: 30,
+            subject: "science"
+        }
+        // let studentCopy = student; // copy by reference
+        // let studentCopy = Object.assign({}, student); // cloning es5 way
+        let studentCopy = { ...student }; // cloning es6 way
+
+        console.log("student: ", student);
+        console.log("studentCopy: ", studentCopy);
+
+        student.subject = "computer science"
+
+        console.log("after updating original object =========> ");
+
+        console.log("student: ", student);
+        console.log("studentCopy: ", studentCopy);
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

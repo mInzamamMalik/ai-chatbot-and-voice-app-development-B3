@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>es6 Objects</h1>
+
+    <p id="para"></p>
+
+    <script>
+        // JavaScript - oracle/sun microsystems
+        // EcmaScript - es6
+
+
+        let user = {
+            name: 'John',
+            email: 'john@example.com',
+            rollNumber: 123,
+            age: 30,
+            role: 'student',
+            isActive: true,
+            major: 'Science'
+        }
+
+        console.log(user['name'])
+        console.log(user['email'])
+        console.log(user['rollNumber'])
+        console.log(user['age'])
+        console.log(user['role'])
+
+        console.log(user.isActive)
+        console.log(user.major)
+
+        document.querySelector("#para").innerHTML += user['name']
+
+        user['name'] = "Malik"
+        user['email'] = "malik@sysborg.com"
+        user.rollNumber = 5
+        user.isActive = false
+
+        document.querySelector("#para").innerHTML += user['name']
+
+
+
+        console.log("after change ============>")
+        console.log(user['name'])
+        console.log(user['email'])
+        console.log(user['rollNumber'])
+        console.log(user['age'])
+        console.log(user['role'])
+
+        console.log(user.isActive)
+        console.log(user.major)
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

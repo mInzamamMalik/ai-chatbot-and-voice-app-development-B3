@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <h1>es6 Weather app</h1>
+
+    <form onsubmit="getWeather(); return false">
+        City Name: <input type="text" id="cityName">
+
+        <br>
+        <button type="submit">Get Weather</button>
+    </form>
+
+    <h1 id="result"> </h1>
+    <h3 id="subtitle"> </h3>
+
+    <script>
+
+        function getWeather() {
+            const API_KEY = 'e0f99c494c2ce394a18cc2fd3f100543'
+
+            const cityName = document.getElementById("cityName").value;
+
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metric`
+
+            console.log("url: ", url);
+
+
+            axios.get(url)
+                .then(function (response) {
+                    // handle success
+                    console.log("success response")
+                    console.log(response.data);
+
+                    document.querySelector("#result").innerHTML = response.data.name
+                    document.querySelector("#result").innerHTML += '<br />'
+                    document.querySelector("#result").innerHTML += `${response.data.main.temp}°C`
+
+                    document.querySelector("#subtitle").innerHTML +=
+                        `Min: ${response.data.main.temp_min}°C - Max: ${response.data.main.temp_min}°C`
+
+                })
+                .catch(function (error) {
+                    // handle error
+                    console.log(error);
+                })
+
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
